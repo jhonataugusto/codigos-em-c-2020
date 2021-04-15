@@ -1,0 +1,60 @@
+1)  #include <stdio.h>
+
+
+//Faça um programa em C que leia dois números i e j, e imprima todos os números entre i e j, incluindo
+//eles mesmo. (1.25 pontos)
+
+main(){
+	int inicial, final;
+	printf("===== contador de numeros =====\n");
+	printf("digite o numero inicial: ");  scanf("%d",&inicial);
+	printf("\ndigite o numero final: ");  scanf("%d",&final);
+	for(inicial;inicial <= final; inicial++){
+		printf("%d\n",inicial);
+	}
+}
+
+
+2) #include <stdio.h>
+/*
+Faça um programa em C que leia um número N e imprima o fatorial de N 
+caso esse valor seja par, ou uma mensagem informando que o fatorial é ímpar. (1.25 pontos)
+*/
+
+main(){
+
+	int f,n;
+	printf("===== calculador de fatorial =====\n");
+	printf("digite um numero: ");scanf("%d",&n);
+	
+	for(f=1;n>1;n--){f*=n;}
+	
+	printf("%d",f);
+	if((f%2)==0){printf("\npar");} 
+	else if((f%2)==1){printf("\nimpar");}
+}
+
+3) #include <stdio.h> /* Faça um programa em C que leia 3 números do teclado e  imprima o menor número lido. (1.25 pontos) */  main(){ int n,menor=100000,i; for(i=0;i<=3;i++){ 	printf("digite um numero: "); scanf("%d",&n); 	if(n<menor){menor = n;} 	printf("\nmenor numero lido ate agora: %d\n",menor); 	} }
+
+
+
+4 ) #include <stdio.h>
+/*
+Faça um programa em C que imprima os 10 primeiros
+ termos pares da série abaixo:
+*/
+
+main(){
+	int i,n1=1,n2=1,soma;
+	printf(" 0 ");
+	printf(" %d ",n1);
+	printf(" %d ",n2);
+	for(i=3;i<10;i++){
+		soma = n1 + n2;
+		n1 = n2;
+		n2 = soma;
+		printf(" %d ",soma);
+		
+	}
+	
+}
